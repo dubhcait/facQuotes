@@ -1,7 +1,9 @@
-   <section class="about-card about-text" id="about">
+     <main>
+      
+      <section class="about-card about-text" id="about">
         <!-- <h2>About</h2> -->
         <video
-          src="../assets/cover-vid.mp4"
+          src="assets/cover-vid.mp4"
           playsinline="true"
           autoplay="true"
           loop="true"
@@ -9,10 +11,28 @@
         ></video>
         <div class="video-overlay">
           <blockquote>
-            JASH is an exquisite team of award-winning full-stack developers
-            specialising in unicorn design and contact form labels. Our
-            community is quite popular, but we are open for new projects -
-            contact us via the form below!
+           Founders and Coders gave me the confidence to, given time and perseverance, grasp complex concepts which initially seemed daunting. I learned how to walk through code thoroughly and truly understand it in order to solve bugs and errors. And I discovered the joys of paired programming - that learning or tackling a problem together can be one of the most rewarding experiences.”
           </blockquote>
         </div>
       </section>
+      <section class="contact__form" id="contact">
+        <form action="/post" method="POST" onsubmit="alert('Thanks!')">
+                <h>Got something to say about FAC?</h>
+            
+                
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" placeholder="Jash Funderberker">
+              
+              
+            
+           
+                <label for="msg">quote</label>
+                <textarea id="msg" name="user_message" rows="10" placeholder="Dear JASH, I am interested in hiring you for..."></textarea>
+            
+            <button class="btn__submit" type="submit">Submit</button>
+            <noscript>                        
+                <div id="alertdiv">Thanks!</div>
+            </noscript>
+        </form>
+        </section>
+    </main>
