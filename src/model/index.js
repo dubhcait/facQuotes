@@ -1,5 +1,1 @@
-module.exports = [
-    { quote: ' Founders and Coders gave me the confidence to, given time and perseverance, grasp complex concepts which initially seemed daunting. I learned how to walk through code thoroughly and truly understand it in order to solve bugs and errors. And I discovered the joys of paired programming - that learning or tackling a problem together can be one of the most rewarding experiences.”', author: 'Helen' },
-    { quote: 'The best part of my experience with Founders and Coders are the people. It is a great community, with members of past cohorts teaching the current cohort. Everyone supports each other in their learning and wants to give back.”', author: 'Ruth' },
-    { quote: 'The constant focus on pairing and working together means that youre never stuck banging your head against a wall by yourself. You always have someone else to work through the problem with you. After leaving Founders and Coders, I had a lot of faith in my own ability to learn new technologies, which was crucial when I founded my startup, Fat Llama.”', author: 'Owen' },
-];
+{"Trials":["kate"]}

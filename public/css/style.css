@@ -152,9 +152,8 @@ html {
     
     .btn__submit {
         font-size:1.5rem;
+        max-width: 20%;
     }
-}
-
 
 
 @media (max-width: 599px) {
@@ -188,19 +187,13 @@ html {
   text-align: center;
   min-height: 100vh;
   height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(148, 142, 194, 1),
-    rgba(194, 142, 160, 1),
-    rgba(142, 177, 194, 1),
-    rgba(194, 151, 142, 1)
-  );
+ 
 }
 
 .contact__form form {
   font-family: "Lato", sans-serif;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   border-radius: 0.25em;
   display: flex;
   flex-direction: column;
@@ -234,7 +227,7 @@ textarea {
 }
 
 input {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 input:focus:invalid {
@@ -251,4 +244,9 @@ fieldset {
 
 form h {
   font-size: 2.5rem;
+}
+
+h1 {
+   font-size: 2.5rem;
+   background-color: white; 
 }
