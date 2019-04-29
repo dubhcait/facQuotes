@@ -128,7 +128,6 @@ h1 {
 }
 
 .btn__submit {
-  font-family: "Lato", sans-serif;
   background-color: white;
   padding: 1em;
   border-radius: 5px;
@@ -171,4 +170,10 @@ fieldset {
 
 form h {
   font-size: 2.5rem;
+}
+
+footer {
+  text-align: right;
+  margin-top: 30px;
+  padding: 20px;
 }
