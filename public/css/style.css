@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
 }
 
 body {
   margin: 0;
-  --accent: 350;
+
 }
 
 html {
@@ -13,52 +13,22 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.anna {
-  --accent: 247;
-}
-
-.sam {
-  --accent: 340;
-}
-
-.henry {
-  --accent: 200;
-}
-
-.james {
-  --accent: 10;
+h1 {
+   font-size: 2.5rem;
+   background-color: white; 
+   margin: 20px;
+   padding: 1em;
+   text-align: center;
 }
 
 
-.about-card {
-  color: hsla(var(--accent), 30%, 20%, 1);
-}
-
-.about-text h2 {
-  margin-top: 0;
-  text-decoration: underline hsla(var(--accent), 60%, 60%, 1);
-}
-
-.about-text {
+.text {
   text-align: justify;
   line-height: 1.5;
   /* height: 100vh; */
 }
 
-.about-text video {
+.text video {
   z-index: -1;
   position: absolute;
   height: 100vh;
@@ -67,7 +37,7 @@ html {
 }
 
 .video-overlay {
-  height: 100%;
+  height: 100vh;
   background-color: hsla(0, 0%, 100%, 1);
 
   display: flex;
@@ -88,41 +58,12 @@ html {
 }
 
 
-
-
-  .team-card {
-    position: relative;
-  }
-
-  .team-text {
-    background-color: hsla(0, 0%, 100%, 0.6);
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    height: 100%;
-  }
-
-  .team-text:hover {
-    opacity: 1;
-  }
-
-  .team-card img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    object-fit: cover;
-  }
-
-  .about-text {
+  .text {
     line-height: 2;
     height: 100vh;
-    /* background-color: white; */
   }
 
-  .about-text blockquote {
-    border-left: 8px solid hsl(var(--accent), 100%, 70%);
+  .text blockquote {
     padding: 1.5em 2em 1.5em 4em;
     width: 60vw;
     position: relative;
@@ -130,10 +71,8 @@ html {
     background-color: white;
   }
 
-  .about-text blockquote::before {
+  .text blockquote::before {
     content: "\201C";
-    color: hsl(var(--accent), 100%, 70%);
-
     font-size: 6em;
     padding: 0;
     position: absolute;
@@ -145,38 +84,22 @@ html {
     height: 100vh;
     background-color: hsla(0, 0%, 100%, 0.6);
   }
-
-  /*form rules*/
  
-  
     
     .btn__submit {
         font-size:1.5rem;
-        max-width: 20%;
+        max-width: 25%;
     }
 
 
 @media (max-width: 599px) {
-  .team-card {
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 4px 8px 20px 2px hsla(var(--accent), 50%, 30%, 0.4);
+  
+
+  .text blockquote {
+    margin: 10px;
+    padding: 1em 2em 1em 4em;
+    width: 80vw;
   }
-
- 
-
-  .about-text blockquote {
-    border-left: 8px solid hsl(var(--accent), 100%, 70%);
-    padding: 1.5em 2em 1.5em 4em;
-  }
-
-
-
-    .about-text video {
-        height: 0;
-        width: 0;
-    }
 
     .btn__submit {
         font-size: 1em;
@@ -191,13 +114,17 @@ html {
 }
 
 .contact__form form {
-  font-family: "Lato", sans-serif;
   margin: 0 auto;
   width: 70%;
   border-radius: 0.25em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 25vh;
+}
+
+.contact__form label {
+  display: none;
 }
 
 .btn__submit {
@@ -222,8 +149,8 @@ textarea {
   border-radius: 0.25em;
   resize: none;
   line-height: 20px;
-  font: 1em "Lato", sans-serif;
   padding: 1em;
+  margin: 1em;
 }
 
 input {
@@ -244,9 +171,4 @@ fieldset {
 
 form h {
   font-size: 2.5rem;
-}
-
-h1 {
-   font-size: 2.5rem;
-   background-color: white; 
 }
