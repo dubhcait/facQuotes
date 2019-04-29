@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const compresion = require('compression');
 
 const controllers = require('./controllers/index.js');
-// const helpers = require('./views/helpers/index');
+const helpers = require('./views/helpers/index');
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.engine(
         layoutsDir: path.join(__dirname, 'views','layouts'),
         partialsDir: path.join(__dirname, 'views', 'partials'),
         defaultLayout: 'main',
-        // helpers:helpers,
+        helpers:helpers,
     })
 );
 
