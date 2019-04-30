@@ -1,11 +1,11 @@
 
-
+const data = require('../model')
 
 
 exports.get = (req,res) => {
 
     res
      .status(200)
-    .render('home');
+    .render('home', {quotes : data});
    
 };
