@@ -2,7 +2,7 @@ const { Pool } = require("pg");
 const url = require("url");
 require("env2")("./config.env");
 
-let connectionString = process.env.DATABASE_URL;
+let connectionString = process.env.HEROKU_POSTGRESQL_BROWN_URL;
 
 if (!connectionString) throw new Error("Database url must be set");
 
