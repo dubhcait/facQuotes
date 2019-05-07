@@ -1,10 +1,16 @@
 const dbConnection = require('../db_connection');
 
-const getData = cb => {
-    dbConnection.query('SELECT * FROM actions', (err, res) => {
-        if (err) return cb(err);
-        cb(null, res.rows);
-    });
+const getData = () => {
+
+    return new Promise((resolve, reject) => {
+
+
+    dbConnection.query('SELECT * FROM quotes', (err, res) => {
+        if (err) reject (err);
+        resolve(res.rows);
+     })
+    
+    }); 
 };
 
 module.exports = { getData }
