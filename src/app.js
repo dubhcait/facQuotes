@@ -11,7 +11,7 @@ const app = express();
 
 
 app.disable('x-powered-by');
-app.use(compresion())
+app.use(compresion());
 app.set('views',path.join(__dirname, 'views'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));

@@ -1,14 +1,12 @@
 const path = require('path');
 const fs = require('fs');
-const pathToData =  path.join(__dirname, '..', '..', 'model', 'index.json')
+const pathToData =  path.join(__dirname, '..', '..', 'model', 'index.js')
 
 const dataArray = fs.readFile(pathToData, 'utf-8', function(err, data) {
     
     if (err) throw err
 
-    var arrayOfObjects = JSON.parse(data)
-    
-    return arrayOfObjects
+ return data
 })
 
 module.exports = dataArray;

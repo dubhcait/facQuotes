@@ -1,5 +1,5 @@
      <main>
-      
+    
       <section class="about-card text" id="about">
         <!-- <h2>About</h2> -->
         <video
@@ -35,4 +35,9 @@
             </noscript>
         </form>
         </section>
+
+        {{#each quotes}}
+<li> name {{ name }}</li>
+<li> quote {{ quote}}</li>
+        {{/each}}
     </main>
