@@ -9,10 +9,8 @@
           loop="true"
           muted="true"
         ></video>
-        <div class="video-overlay">
-          <blockquote>
-           Founders and Coders gave me the confidence to, given time and perseverance, grasp complex concepts which initially seemed daunting. I learned how to walk through code thoroughly and truly understand it in order to solve bugs and errors. And I discovered the joys of paired programming - that learning or tackling a problem together can be one of the most rewarding experiences.”
-          </blockquote>
+        <div class="video-overlay" id="display">
+       
         </div>
       </section>
       <section class="contact__form" id="contact">
@@ -37,7 +35,6 @@
         </section>
 
         {{#each quotes}}
-<li> name {{ name }}</li>
-<li> quote {{ quote}}</li>
+        <blockquote class="quote">  {{ quote}}" <span class="author">{{ name }}</span></blockquote>
         {{/each}}
     </main>
