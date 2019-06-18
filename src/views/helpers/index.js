@@ -1,5 +1,3 @@
-const dataArray = require('./quotes'); 
+const dataArray = require("./quotes");
 
-module.exports = { dataArray
-
-}
+module.exports = { dataArray };

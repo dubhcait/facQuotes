@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const dbConnection = require("./db_connection");
 
@@ -22,13 +22,15 @@ COMMIT;
 const runDbBuild = () =>
   new Promise((resolve, reject) => {
     dbConnection.query(sql, (err, res) => {
-      if (err) {console.log(err) 
-        return reject(err);}
+      if (err) {
+        console.log(err);
+        return reject(err);
+      }
       console.log("database being built");
       resolve(true);
     });
   });
 
-  runDbBuild();
+runDbBuild();
 
 module.exports = runDbBuild;

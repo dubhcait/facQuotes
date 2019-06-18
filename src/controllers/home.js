@@ -1,20 +1,7 @@
+const { getData } = require("../model/queries/getData");
 
-const { getData } = require('../model/queries/getData')
-
-
-exports.get = (req,res) => {
-
-  
-
-   getData().then(response => {
-
-    res
-     .status(200)
-    .render('home', { quotes: response });
-
-   }) 
-        
-     
-
-    
+exports.get = (req, res) => {
+  getData().then(response => {
+    res.status(200).render("home", { quotes: response });
+  });
 };
