@@ -1,6 +1,6 @@
 const { Pool } = require("pg");
 const url = require("url");
-require("env2")("./config.env");
+require("env2")("./.env");
 
 let connectionString = process.env.HEROKU_POSTGRESQL_BROWN_URL;
 

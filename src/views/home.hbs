@@ -1,40 +1,34 @@
-     <main>
-    
-      <section class="about-card text" id="about">
-        <!-- <h2>About</h2> -->
-        <video
-          src="assets/cover-vid.mp4"
-          playsinline="true"
-          autoplay="true"
-          loop="true"
-          muted="true"
-        ></video>
-        <div class="video-overlay" id="display">
-       
-        </div>
-      </section>
-      <section class="contact__form" id="contact">
-        <form action="/post" method="POST" onsubmit="alert('Thanks!')">
-                <h>Got something to say about FAC?</h>
-            
-                
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" placeholder="Your Name">
-              
-              
-            
-           
-                <label for="msg">quote</label>
-                <textarea id="msg" name="quote" rows="10" placeholder="FAC is ...."></textarea>
-            
-            <button class="btn__submit" type="submit">Submit</button>
-            <noscript>                        
-                <div id="alertdiv">Thanks!</div>
-            </noscript>
-        </form>
-        </section>
+<main>
 
-        {{#each quotes}}
-        <blockquote class="quote">  {{ quote}}" <span class="author">{{ name }}</span></blockquote>
-        {{/each}}
-    </main>
+  <section class="about-card text" id="about">
+    <!-- <h2>About</h2> -->
+    <video src="assets/cover-vid.mp4" playsinline="true" autoplay="true" loop="true" muted="true"></video>
+    <div class="video-overlay" id="display">
+
+    </div>
+  </section>
+
+  <section class="contact__form" id="contact">
+    <form action="/post" method="POST">
+
+      <h>Got something to say about FAC?</h>
+
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+
+
+      <label for="msg">quote</label>
+      <textarea id="msg" name="quote" rows="10" placeholder="FAC is ...." required></textarea>
+
+      <button class="btn__submit" type="submit">Submit</button>
+
+    </form>
+  </section>
+
+  {{#each quotes}}
+  <blockquote class="quote"> {{ quote}}" <span class="author">{{ name }}</span></blockquote>
+  {{/each}}
+</main>
